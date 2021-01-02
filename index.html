@@ -17,7 +17,7 @@
   <body>
     <!-- navbar -->
     <div class="navbar-fixed">
-      <nav class="blue darken-2">
+      <nav class="grey darken-4">
         <div class="container">
           <div class="nav-wrapper">
             <a href="#home" class="brand-logo">HayyahTeam</a>
@@ -83,15 +83,15 @@
           <div class="col m6 light">
             <p>WEB DEVELOPMENT</p>
             <div class="progress">
-              <div class="determinate blue" style="width: 95%"></div>
+              <div class="determinate grey" style="width: 80%"></div>
             </div>
             <p>MOBILE APP DEVELOPMENT</p>
             <div class="progress">
-              <div class="determinate blue" style="width: 85%"></div>
+              <div class="determinate grey" style="width: 80%"></div>
             </div>
-            <p>GAME DEVELOPMENT</p>
+            <p>DIGITAL PRINTING</p>
             <div class="progress">
-              <div class="determinate blue" style="width: 90%"></div>
+              <div class="determinate grey" style="width: 90%"></div>
             </div>
           </div>
         </div>
@@ -105,14 +105,14 @@
       <div class="container clients" >
         <h3 class="center light white-text">Our Clients</h3>
         <div class="row">
-          <div class="col m4 s12 center">
-            <img src="img/clients/gojek.png">
+          <div class="col m12 s12 center">
+            <img src="img/clients/logo.png">
           </div>
-          <div class="col m4 s12 center">
+          <!-- <div class="col m4 s12 center">
             <img src="img/clients/tokopedia.png">
           </div>
           <div class="col m4 s12 center">
-            <img src="img/clients/traveloka.png">
+            <img src="img/clients/traveloka.png"> -->
           </div>
         </div>
       </div>
@@ -128,21 +128,21 @@
             <div class="card-panel center">
               <i class="material-icons medium">desktop_windows</i>
               <h5>Web Development</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, quos.</p>
+              <p>One day website creation service with satisfying results.</p>
             </div>
           </div>
           <div class="col m4 s12">
             <div class="card-panel center">
               <i class="material-icons medium">developer_mode</i>
               <h5>Mobile Development</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, quos.</p>
+              <p>Mobile application development services (Android & IOS)</p>
             </div>
           </div>
           <div class="col m4 s12">
             <div class="card-panel center">
-              <i class="material-icons medium">games</i>
-              <h5>Game Development</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, quos.</p>
+              <i class="material-icons medium">book</i>
+              <h5>Digital Printing</h5>
+              <p>The printing service is ready to produce cadres "with good character and manners</p>
             </div>
           </div>
         </div>
@@ -192,10 +192,10 @@
         <h3 class="center light grey-text text-darken-3">Contact Us</h3>
         <div class="row">
           <div class="col m5 s12">
-            <div class="card-panel blue darken-2 center">
-              <i class="material-icons white-text">email</i>
-              <h5>Contact</h5>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <div class="card-panel grey darken-4 white-text ">
+              <h5 class="center">Contact : </h5>
+              <h6><i class="material-icons white-text tiny">email</i> alhayyahsquad@gmail.com</h6 >
+              <h6><i class="material-icons white-text tiny">call</i> +62 897-4665-051</h6 >
             </div>
             <ul class="collection with-header">
               <li class="collection-header">
@@ -204,8 +204,8 @@
                 </h4>
               </li>
               <li class="collection-item">HayyahTeam</li>
-              <li class="collection-item">Jl. Pulau Segudi</li>
-              <li class="collection-item">Bandar Lampung, Indonesia</li>
+              <li class="collection-item">Jl. Pahlawan , Surabaya, Kec. Kedaton</li>
+              <li class="collection-item">Bandar Lampung, Lampung, Indonesia</li>
             </ul>
           </div>
           <div class="col m7 s12">
@@ -224,12 +224,20 @@
                   <input type="text" name="phone" id="phone">
                   <label for="phone">Phone Number</label>
                 </div>
-                
+                <div class="input-field">
+                  <select>
+                    <option value="" disabled selected>Choose your services</option>
+                    <option value="1">Web Development</option>
+                    <option value="2">Android Development</option>
+                    <option value="3">Digital Printing</option>
+                  </select>
+                  <label>Your Services</label>
+                </div>
                 <div class="input-field">
                   <textarea name="message" id="message" class="materialize-textarea"></textarea>
                   <label for="message">Message</label>
                 </div>
-                <button type="submit" class="btn blue darken-2">Send</button>
+                <button type="submit" class="btn grey darken-4">Send</button>
               </div>
             </form>
           </div>
@@ -239,7 +247,7 @@
     <!-- akhir contact us -->
 
     <!-- footer -->
-    <footer class="blue darken-2 white-text center">
+    <footer class="grey darken-4 white-text center">
       <p class="flow-text">HayyahTeam. Copyright 2020.</p>
     </footer>
     <!-- akhir footer -->
@@ -273,6 +281,10 @@
       M.ScrollSpy.init(scroll, {
         scrollOffset: 50
       });
+
+      //options
+      const opti = document.querySelectorAll('select');
+      M.FormSelect.init(opti);
     </script>
   </body>
 </html>
