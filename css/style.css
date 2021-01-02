@@ -19,3 +19,12 @@
 section, footer {
     padding: 20px;
 }
+section.services span {
+    display: inline-block;
+    padding: 4px 13px;
+    font-size: 12px;
+    border-radius: 99px;
+    margin: 0 12px 12px 0;
+    background-color: transparent;
+    border: 1px solid #aaaaaa;
+  }
