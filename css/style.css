@@ -8,18 +8,18 @@
 }
 
 .slider .display {
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
     font-weight: 400;
 }
 
 .slider h3 {
     font-family: Viga;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
     font-weight: 600;
 }
 
 .slider img {
-    filter: blur(4px);
+    filter: grayscale(1);
 }
 
 .parallax-container {
