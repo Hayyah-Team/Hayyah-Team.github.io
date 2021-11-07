@@ -12,22 +12,22 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>HayyahTeam</title>
+    <title>FrozenCatFish</title>
   </head>
 
   <body id="home" class="scrollspy">
     <!-- navbar -->
     <div class="navbar-fixed">
-      <nav class="grey darken-4">
+      <nav class="red accent-4">
         <div class="container">
           <div class="nav-wrapper">
-            <a href="#home" class="brand-logo">HayyahTeam</a>
+            <a href="#home" class="brand-logo">FrozenLele</a>
             <a href="#home" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="#about">Tentang Kami</a></li>
-              <li><a href="#clients">Klien</a></li>
-              <li><a href="#services">Jasa</a></li>
-              <li><a href="#portofolio">Portofolio</a></li>
+              <li><a href="#about">Produk Kami</a></li>
+              <li><a href="#ingredient">Bahan Pembuatan</a></li>
+              <li><a href="#galery">Galeri</a></li>
+              <li><a href="#testimoni">Testimoni</a></li>
               <li><a href="#contact">Kontak Kami</a></li>
             </ul>
           </div>
@@ -36,10 +36,10 @@
     </div>
 
     <ul class="sidenav" id="mobile-nav">
-      <li><a href="#about">Tentang Kami</a></li>
-      <li><a href="#clients">Klien</a></li>
-      <li><a href="#services">Jasa</a></li>
-      <li><a href="#portofolio">Portofolio</a></li>
+      <li><a href="#about">Produk Kami</a></li>
+      <li><a href="#ingredient">Bahan Pembuatan</a></li>
+      <li><a href="#galery">Galeri Kami</a></li>
+      <li><a href="#testimoni">Testimoni</a></li>
       <li><a href="#contact">Kontak Kami</a></li>
     </ul>
     <!-- akhir navbar -->
@@ -48,10 +48,17 @@
     <div class="slider scrollspy">
       <ul class="slides">
         <li>
-          <img src="img/slider/minimalist.jpg"> <!-- random image -->
-          <div class="caption left-align">
-            <h3>Kami adalah HayyahTeam</h3>
-            <h5 class="display light grey-text text-lighten-3">Kami akan mengerjakan proyek dengan baik, rapi, dan sesuai dengan kebutuhan Anda.</h5>
+          <!-- Gambar Header -->
+          <img src="img/slider/background.jpg"> 
+          <div class="caption row items-center left-align">
+            <div class="col s12 m8">
+              <h3>Heading</h3>
+              <h5 class="display light">Subheading</h5>
+            </div>
+            <div class="col s12 m4">
+              <!-- Gambar Lele -->
+              <img src="https://img.okezone.com/content/2020/08/31/298/2270316/5-manfaat-ikan-lele-yang-wajib-kamu-ketahui-baik-untuk-kesehatan-kulit-KdhWRw1VWl.jpg" alt="" class="circle">
+            </div>
           </div>
         </li>
       </ul>
@@ -62,23 +69,19 @@
     <section class="about scrollspy" id="about">
       <div class="container">
         <div class="row">
-          <h3 class="center light grey-text text-darken-3">Tentang Kami</h3>
-          <div class="col m6">
-            <h5>Kami adalah HayyahTeam</h5>
-            <p>Kami akan mengerjakan proyek dengan baik, rapi, dan sesuai dengan kebutuhan Anda. Membantu menyelesaikan masalah menggunakan teknologi.</p>
-          </div>
-          <div class="col m6 light">
-            <p>WEB DEVELOPMENT</p>
-            <div class="progress">
-              <div class="determinate grey" style="width: 80%"></div>
-            </div>
-            <p>MOBILE APP DEVELOPMENT</p>
-            <div class="progress">
-              <div class="determinate grey" style="width: 70%"></div>
-            </div>
-            <p>DIGITAL PRINTING</p>
-            <div class="progress">
-              <div class="determinate grey" style="width: 90%"></div>
+          <h3 class="center light grey-text text-darken-3">Produk Kami</h3>
+            <div class="card-panel z-depth-1">
+              <div class="row valign-wrapper">
+                <div class="col s4 item center">
+                  <img src="https://img.okezone.com/content/2020/08/31/298/2270316/5-manfaat-ikan-lele-yang-wajib-kamu-ketahui-baik-untuk-kesehatan-kulit-KdhWRw1VWl.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                </div>
+                <div class="col s8">
+                  <span class="black-text">
+                    <h4>Heading</h4>
+                    <h6>text</h6>
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -86,153 +89,69 @@
     </section>
     <!-- akhir about us -->
 
-    <!-- Services -->
-    <section class="services grey lighten-3 scrollspy" id="services">
+    <!-- ingredient -->
+    <section class="ingredient grey lighten-3 scrollspy" id="ingredient">
       <div class="container">
         <div class="row">
-          <h3 class="center light grey-text text-darken-3">Jasa Kami</h3>
-          <div class="card-panel">
-            <div class="row">
-              <div class="col m12 l5 center">
-                <i class="material-icons medium">insert_photo</i>
-                <h5>UI / UX Design</h5>
-                <p>Membuat desain yang menarik dan interaktif sehingga dapat memberikan hasil yang baik.</p>
-              </div>
-              <div class="col m12 l7">
-                <div class="row">
-                  <div class="col s6 m12">
-                    <p>Alat</p>
-                      <div class="row">
-                        <img class="tools-uiux" src="img/tools/ic-figma.png" alt="Figma" title="Figma">
-                      </div>
-                  </div>
-                  <div class="col s6 m12">
-                    <p>Bekerja</p>
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <span>User Flow</span>
-                          <span>Work Flow</span>
-                          <span>Wireframe</span>
-                          <span>Mockup</span>
-                          <span>Prototype</span>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card-panel">
-            <div class="row">
-              <div class="col l5 m12 center">
-                <i class="material-icons medium">phonelink</i>
-                <h5>Development</h5>
-                <p>Membuat aplikasi yang dapat membantu klien dalam bentuk website atau mobile.</p>
-              </div>
-              <div class="col l7 m12">
-                <div class="row">
-                  <div class="col s6 m12">
-                    <p>Alat</p>
-                    <div class="row">
-                      <img class="tools-uiux" src="img/tools/favicon-96x96.png" alt="Quasar" title="Quasar">
-                      <img class="tools-uiux" src="img/tools/ic-android-studio.png" alt="AS" title="Android Studio">
-                      <img class="tools-uiux" src="img/tools/ic-bootstrap.png" alt="Bootstrap" title="Bootstrap">
-                      <img class="tools-uiux" src="img/tools/ic-css3.png" alt="CSS3" title="Css3">
-                      <img class="tools-uiux" src="img/tools/ic-github.png" alt="Github" title="Github">
-                      <img class="tools-uiux" src="img/tools/ic-html5.png" alt="html5" title="Html5">
-                      <img class="tools-uiux" src="img/tools/ic-jquery.png" alt="JQ" title="jQuery">
-                      <img class="tools-uiux" src="img/tools/ic-laravel.png" alt="laravel" title="Laravel">
-                      <img class="tools-uiux" src="img/tools/lumen.png" alt="lumen" title="Lumen">
-                      <img class="tools-uiux" src="img/tools/javascript.png" alt="JS" title="JavaScript">
-                      <img class="tools-uiux" src="img/tools/ic-materialize.png" alt="materialize" title="Materialize">
-                      <img class="tools-uiux" src="img/tools/ic-vs-code.png" alt="visco" title="Visual Studi Code">
-                    </div>
-                  </div>
-                  <div class="col s6 m12">
-                    <p>Bekerja</p>
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <span>Web Front End</span>
-                          <span>Web Back End CRUD Autentication</span>
-                          <span>Mobile App Front End with Android Studio</span>
-                          <span>Mobile App Front End with Quasar Framework</span>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card-panel">
-            <div class="row">
-              <div class="col m12 l5 center">
-                <i class="material-icons medium">camera_alt</i>
-                <h5>Digital Printing</h5>
-                <p>Jasa percetakan siap mencetak dengan hasil yang bagus.</p>
-              </div>
-              <div class="col m12 l7">
-                <p>Bekerja</p>
-                  <div class="row">
-                      <div class="col-lg-12">
-                          <span>Polaroid</span>
-                          <span>Photo Poster</span>
-                          <span>Sticker</span>
-                          <span>Print Photo</span>
-                      </div>
-                  </div>
-              </div>
-            </div>
+          <h3 class="center light grey-text text-darken-3">Bahan Pembuatan</h3>
+          <h5 class="center light grey-text text-darken-3">Bahan yang kami gunakan terdiri dari : </h5>
+          <div class="row">
+            <div class="col m3 offset-m1 borderbahan">asda</div>
+            <div class="col m3 offset-m1 borderbahan">asda</div>
+            <div class="col m3 offset-m1 borderbahan">asda</div>
           </div>
         </div>
       </div>
     </section>
-    <!-- akhir services -->
+    <!-- akhir ingredient -->
 
-    <!-- portofolio -->
-    <section class="portofolio scrollspy" id="portofolio">
+    <!-- galery -->
+    <section class="galery scrollspy" id="galery">
       <div class="container">
-        <h3 class="center light grey-text text-darken-3">Portofolio</h3>
+        <h3 class="center light grey-text text-darken-3">Galeri Kami</h3>
+        <h5 class="center light grey-text text-darken-3">Photo hasil olahan dari produk kami : </h5>
         <div class="row">
           <div class="col m3 s12">
-            <img src="img/portfolio/1.png" class="responsive-img materialboxed">
+            <img src="http://kbu-cdn.com/dk/wp-content/uploads/pecel-lele-crispy.jpg" class="responsive-img materialboxed">
           </div>
           <div class="col m3 s12">
-            <img src="img/portfolio/2.png" class="responsive-img materialboxed">
+            <img src="https://asset-a.grid.id/crop/0x0:0x0/x/photo/2019/01/30/2984288432.jpg" class="responsive-img materialboxed">
           </div>
           <div class="col m3 s12">
-            <img src="img/portfolio/3.png" class="responsive-img materialboxed">
+            <img src="https://cdn.idntimes.com/content-images/post/20170515/catfishfingers4-1-6acb9167937027c455c690a35a42eba8.jpg" class="responsive-img materialboxed">
           </div>
           <div class="col m3 s12">
-            <img src="img/portfolio/4.png" class="responsive-img materialboxed">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col m3 s12">
-            <img src="img/portfolio/5.png" class="responsive-img materialboxed">
-          </div>
-          <div class="col m3 s12">
-            <img src="img/portfolio/6.png" class="responsive-img materialboxed">
-          </div>
-          <div class="col m3 s12">
-            <img src="img/portfolio/1.png" class="responsive-img materialboxed">
-          </div>
-          <div class="col m3 s12">
-            <img src="img/portfolio/2.png" class="responsive-img materialboxed">
+            <img src="https://cdn.idntimes.com/content-images/post/20190927/5-f22393f083463dc468d0edcbfd85427f_600x400.jpg" class="responsive-img materialboxed">
           </div>
         </div>
       </div>
     </section>
-    <!-- akhir portofolio -->
+    <!-- akhir galery -->
 
     <!-- Client -->
-    <div class="parallax-container scrollspy" id="clients">
+    <div class="parallax-container scrollspy" id="testimoni">
       <div class="parallax"><img src="img/slider/black.png"></div>
       <div class="container clients" >
-        <h3 class="center light white-text">Klien Kami</h3>
-        <div class="row">
-          <div class="col m12 s12 center">
-            <img src="img/clients/logo.png">
-          </div>
+        <h3 class="center light white-text">Testimoni</h3>
+        <div class="carousel">
+          <a class="carousel-item" href="#one!">
+            <div class="column">
+              <img src="./img/clients/nonop.jpg" class="circle profile">
+              <div class="white-text">Lorem ipsum dolor sit amet.</div>
+            </div>
+          </a>
+          <a class="carousel-item" href="#two!">
+            <div class="column">
+              <img src="./img/clients/anu.jpg" class="circle profile">
+              <div class="white-text">Lorem ipsum dolor sit amet.</div>
+            </div>
+          </a>
+          <a class="carousel-item" href="#three!">
+            <div class="column">
+              <img src="./img/clients/rudi.jpg" class="circle profile">
+              <div class="white-text">Lorem ipsum dolor sit amet.</div>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -246,7 +165,7 @@
           <div class="col m5 s12">
             <div class="card-panel grey darken-4 white-text ">
               <h5 class="center">Kontak : </h5>
-              <p><i class="material-icons white-text tiny">email</i> alhayyahsquad@gmail.com</p >
+              <p><i class="material-icons white-text tiny">email</i> FrozenLele@gmail.com</p >
               <p><i class="material-icons white-text tiny">call</i> +62 897-4665-051</p>
             </div>
             <ul class="collection with-header">
@@ -255,7 +174,7 @@
                   Kantor Kami
                 </h4>
               </li>
-              <li class="collection-item">HayyahTeam</li>
+              <li class="collection-item">FrozenLele</li>
               <li class="collection-item">Jl. Pahlawan , Surabaya, Kec. Kedaton</li>
               <li class="collection-item">Bandar Lampung, Lampung, Indonesia</li>
             </ul>
@@ -269,8 +188,8 @@
                   <label for="name">Nama</label>
                 </div>
                 <div class="input-field">
-                  <input type="email" name="email" id="email" class="validate">
-                  <label for="email">Email</label>
+                  <input type="text" name="alamat" id="alamat" class="validate">
+                  <label for="alamat">Alamat</label>
                 </div>
                 <div class="input-field">
                   <input type="text" name="phone" id="phone">
@@ -278,12 +197,12 @@
                 </div>
                 <div class="input-field">
                   <select>
-                    <option value="" disabled selected>Pilih Jasa</option>
-                    <option value="1">UI / UX Design</option>
-                    <option value="2">Development</option>
-                    <option value="3">Digital Printing</option>
+                    <option value="" disabled selected>Pilih Ukuran</option>
+                    <option value="1">2 Kg</option>
+                    <option value="2">1 Kg</option>
+                    <option value="3">500 Grams</option>
                   </select>
-                  <label>Jasa Yang Anda Inginkan</label>
+                  <label>Berat Frozen Lele Yang Ingin Anda Beli</label>
                 </div>
                 <div class="input-field">
                   <textarea name="message" id="message" class="materialize-textarea"></textarea>
@@ -299,8 +218,8 @@
     <!-- akhir contact us -->
 
     <!-- footer -->
-    <footer class="grey darken-4 white-text center">
-      <p class="flow-text">HayyahTeam. Copyright 2020.</p>
+    <footer class="grey darken-3 white-text center">
+      <p class="flow-text">Frozen Food Lele. Copyright 2021.</p>
     </footer>
     <!-- akhir footer -->
 
@@ -337,6 +256,12 @@
       //options
       const opti = document.querySelectorAll('select');
       M.FormSelect.init(opti);
+
+      // Carousel
+      const caro = document.querySelectorAll('.carousel');
+      M.Carousel.init(caro, {
+        dist: -200
+      })
 
     </script>
   </body>
